@@ -1,11 +1,10 @@
-
 :root {
     --cor-fundo: #ffffff;
     --cor-texto: #000000;
-    --cor-destaque: #7389AE;
-    --cor-borda: #416788;
+    --cor-destaque: #416788;
     --cor-suave: #B5BAD0;
-    }
+    --cor-borda: #4b88b9; 
+}
 
 *,
 *::before,
@@ -13,119 +12,142 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+    margin: 0;
+}
 
- main {
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 72px;
+}
+
+header {
+    background-color: var(--cor-destaque);
+    color: #000000;
+    padding: 10px;
+}
+
+main {
     width: 900px;
     max-width: 100%;
     margin: 0 auto;
     padding: 16px;
-
 }
-body{
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--cor-texto);
-    background: var(--cor-fundo);
-    font-family: 'Open Sans', sans-serif;
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--cor-destaque);
+    color: #000000;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
-    header {
-        background-color: var(--cor-destaque);
-        color: var(--cor-texto);
-        padding: 24px;
-    }
 
-    nav a {
-        text-decoration: none;
-        color: var(--cor-texto);
-    }
+.lista-exercicios {
+    text-decoration: none;
+    color: #030303; 
+}
 
-    nav a:hover {
-        background-color: var(--cor-borda);
-        padding: 8px 12px;
-        border-radius: 6px;
-        
-    }
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 8px 12px;
+}
 
-    ul{
-        list-style: none;
-    }
+a:hover {
+    background-color: #4b88b9;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
 
-    .tabela {
-        width: 100%;
-        margin-top: 2rem;
-        border-collapse: collapse;
-    }
+nav a:hover {
+    background-color: var(--cor-borda);
+    padding: 8px 12px;
+    border-radius: 6px;
+}
 
-    .tabela caption {
-        text-align: left;
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-    }
-    .tabela, th, td {
-        border: 1px solid var(--cor-texto);
-        padding: 12px;
-    }
-    input {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
+ul {
+    list-style: none;
+}
 
-        outline: none; 
-    }
-    input :focus{
-        border-color: #416788;
-    }
-    
-    select {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-    }
-    textarea {
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 16px;
-    }
+.tabela {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
 
-    button {
-        background-color: var(--cor-borda);
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        cursor: pointer;
-        font-size: 16px;
-    }
+.tabela caption {
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
 
-    .destaque {
-        background-color: #ffffff;
-        border-left: 4px solid #416788;
-        padding: 16px;
-    }
+.tabela, th, td {
+    border: 1px solid var(--cor-texto);
+    padding: 12px;
+}
 
-    h1{
-        font-size: 2.5rem;
-        font-family: 'Clarity City', sans-serif;
-    }
-    h2{
-        font-size: 1.75rem;
-        font-family: 'Clarity City', sans-serif;
-    }
-    h3{
-        font-size: 1.25rem;
-        font-family: 'Clarity City', sans-serif;
-    }
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    outline: none; 
+}
 
-    
-    
-    tbody tr:nth-child(even) {
+input:focus {
+    border-color: #416788;
+}
 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+}
+
+button {
+    background-color: var(--cor-borda);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.destaque {
+    background-color: #ffffff;
+    border-left: 4px solid var(--cor-destaque);
+    padding: 16px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Clarity City', sans-serif;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-family: 'Clarity City', sans-serif;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-family: 'Clarity City', sans-serif;
+}
+
+tbody tr:nth-child(even) {
     background: var(--cor-suave);
-    }
-
-    footer {
-        background-color: var(--cor-destaque);
-        color: var(--cor-texto);
-        padding: 24px;
-        text-align: center;
-    }
+}
