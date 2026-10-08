@@ -1,0 +1,131 @@
+
+:root {
+    --cor-fundo: #ffffff;
+    --cor-texto: #000000;
+    --cor-destaque: #7389AE;
+    --cor-borda: #416788;
+    --cor-suave: #B5BAD0;
+    }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+ main {
+    width: 900px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+body{
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--cor-texto);
+    background: var(--cor-fundo);
+    font-family: 'Open Sans', sans-serif;
+}
+    header {
+        background-color: var(--cor-destaque);
+        color: var(--cor-texto);
+        padding: 24px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--cor-texto);
+    }
+
+    nav a:hover {
+        background-color: var(--cor-borda);
+        padding: 8px 12px;
+        border-radius: 6px;
+        
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    .tabela {
+        width: 100%;
+        margin-top: 2rem;
+        border-collapse: collapse;
+    }
+
+    .tabela caption {
+        text-align: left;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+    .tabela, th, td {
+        border: 1px solid var(--cor-texto);
+        padding: 12px;
+    }
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+
+        outline: none; 
+    }
+    input :focus{
+        border-color: #416788;
+    }
+    
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 16px;
+    }
+
+    button {
+        background-color: var(--cor-borda);
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .destaque {
+        background-color: #ffffff;
+        border-left: 4px solid #416788;
+        padding: 16px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+    h2{
+        font-size: 1.75rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+    h3{
+        font-size: 1.25rem;
+        font-family: 'Clarity City', sans-serif;
+    }
+
+    
+    
+    tbody tr:nth-child(even) {
+
+    background: var(--cor-suave);
+    }
+
+    footer {
+        background-color: var(--cor-destaque);
+        color: var(--cor-texto);
+        padding: 24px;
+        text-align: center;
+    }
